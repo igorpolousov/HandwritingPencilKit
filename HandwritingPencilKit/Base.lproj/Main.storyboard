@@ -1,24 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Practice View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PracticeViewController" customModule="HandwritingPencilKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1210" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fH-ag-lIr">
+                                <rect key="frame" x="0.0" y="0.0" width="1210" height="834"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7No-QD-f6D">
+                                <rect key="frame" x="0.0" y="0.0" width="1210" height="834"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome to WWDC" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8A3-wm-f7n">
+                                <rect key="frame" x="20" y="44" width="1069.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lh0-3B-Z7z">
+                                <rect key="frame" x="1089.5" y="50" width="80" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="iZO-aN-drI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4u-Yz-dpM">
+                                <rect key="frame" x="1169.5" y="47.5" width="20.5" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="gearshape.fill" catalog="system"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8A3-wm-f7n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="842-p3-Xe0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h4u-Yz-dpM" secondAttribute="trailing" constant="20" id="9AB-s8-g1X"/>
+                            <constraint firstAttribute="top" secondItem="3fH-ag-lIr" secondAttribute="top" id="HPa-Xm-54V"/>
+                            <constraint firstItem="8A3-wm-f7n" firstAttribute="firstBaseline" secondItem="Lh0-3B-Z7z" secondAttribute="firstBaseline" id="Hhb-s7-A7h"/>
+                            <constraint firstItem="3fH-ag-lIr" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="L06-1C-YYH"/>
+                            <constraint firstAttribute="trailing" secondItem="3fH-ag-lIr" secondAttribute="trailing" id="LJt-YY-hzS"/>
+                            <constraint firstAttribute="top" secondItem="3fH-ag-lIr" secondAttribute="top" id="Mw9-RE-1WU"/>
+                            <constraint firstAttribute="leading" secondItem="3fH-ag-lIr" secondAttribute="leading" id="NCC-e3-T95"/>
+                            <constraint firstAttribute="trailing" secondItem="3fH-ag-lIr" secondAttribute="trailing" id="U3e-Hl-Yev"/>
+                            <constraint firstItem="3fH-ag-lIr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xxx-rO-yZS"/>
+                            <constraint firstItem="h4u-Yz-dpM" firstAttribute="leading" secondItem="Lh0-3B-Z7z" secondAttribute="trailing" id="YXf-Qj-UFN"/>
+                            <constraint firstItem="8A3-wm-f7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="akQ-xY-ZCd"/>
+                            <constraint firstItem="Lh0-3B-Z7z" firstAttribute="leading" secondItem="8A3-wm-f7n" secondAttribute="trailing" id="huk-ZX-FGA"/>
+                            <constraint firstAttribute="bottom" secondItem="3fH-ag-lIr" secondAttribute="bottom" id="o1x-nd-VIU"/>
+                            <constraint firstItem="8A3-wm-f7n" firstAttribute="centerY" secondItem="h4u-Yz-dpM" secondAttribute="centerY" id="tZv-6Y-vWr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundCanvasView" destination="3fH-ag-lIr" id="wYU-RT-HXm"/>
+                        <outlet property="canvasView" destination="7No-QD-f6D" id="AJd-FG-Kec"/>
+                        <outlet property="practiceTextField" destination="8A3-wm-f7n" id="QVz-kV-gh6"/>
+                        <outlet property="scoreLabel" destination="Lh0-3B-Z7z" id="dnw-Q0-ZrU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="123" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
