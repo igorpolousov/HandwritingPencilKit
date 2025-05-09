@@ -58,13 +58,13 @@
 		C2B2B8F72DCE239200458FFE /* HandwritingPencilKit */ = {
 			isa = PBXGroup;
 			children = (
-				C2B2B8EE2DCE239200458FFE /* AppDelegate.swift */,
+				C2B2B8F62DCE239200458FFE /* ViewController.swift */,
+				C2B2B8F42DCE239200458FFE /* Main.storyboard */,
 				C2B2B8EF2DCE239200458FFE /* Assets.xcassets */,
 				C2B2B8F02DCE239200458FFE /* Info.plist */,
 				C2B2B8F22DCE239200458FFE /* LaunchScreen.storyboard */,
-				C2B2B8F42DCE239200458FFE /* Main.storyboard */,
+				C2B2B8EE2DCE239200458FFE /* AppDelegate.swift */,
 				C2B2B8F52DCE239200458FFE /* SceneDelegate.swift */,
-				C2B2B8F62DCE239200458FFE /* ViewController.swift */,
 			);
 			path = HandwritingPencilKit;
 			sourceTree = "<group>";
