@@ -6,30 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C2B2B8F82DCE239200458FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B2B8EF2DCE239200458FFE /* Assets.xcassets */; };
+		C2B2B8FA2DCE239200458FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B2B8F22DCE239200458FFE /* LaunchScreen.storyboard */; };
+		C2B2B8FB2DCE239200458FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B2B8F42DCE239200458FFE /* Main.storyboard */; };
+		C2B2B8FC2DCE239200458FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2B8EE2DCE239200458FFE /* AppDelegate.swift */; };
+		C2B2B8FD2DCE239200458FFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2B8F52DCE239200458FFE /* SceneDelegate.swift */; };
+		C2B2B8FE2DCE239200458FFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2B8F62DCE239200458FFE /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C2B2B8D62DCE232A00458FFE /* HandwritingPencilKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandwritingPencilKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B2B8EE2DCE239200458FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2B2B8EF2DCE239200458FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2B2B8F02DCE239200458FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2B2B8F12DCE239200458FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2B2B8F32DCE239200458FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2B2B8F52DCE239200458FFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C2B2B8F62DCE239200458FFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2B2B8FF2DCE250300458FFE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C2B2B8E82DCE232C00458FFE /* Exceptions for "HandwritingPencilKit" folder in "HandwritingPencilKit" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = C2B2B8D52DCE232A00458FFE /* HandwritingPencilKit */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C2B2B8D82DCE232A00458FFE /* HandwritingPencilKit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				C2B2B8E82DCE232C00458FFE /* Exceptions for "HandwritingPencilKit" folder in "HandwritingPencilKit" target */,
-			);
-			path = HandwritingPencilKit;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C2B2B8D32DCE232A00458FFE /* Frameworks */ = {
@@ -45,7 +41,8 @@
 		C2B2B8CD2DCE232A00458FFE = {
 			isa = PBXGroup;
 			children = (
-				C2B2B8D82DCE232A00458FFE /* HandwritingPencilKit */,
+				C2B2B8FF2DCE250300458FFE /* README.md */,
+				C2B2B8F72DCE239200458FFE /* HandwritingPencilKit */,
 				C2B2B8D72DCE232A00458FFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +53,20 @@
 				C2B2B8D62DCE232A00458FFE /* HandwritingPencilKit.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C2B2B8F72DCE239200458FFE /* HandwritingPencilKit */ = {
+			isa = PBXGroup;
+			children = (
+				C2B2B8EE2DCE239200458FFE /* AppDelegate.swift */,
+				C2B2B8EF2DCE239200458FFE /* Assets.xcassets */,
+				C2B2B8F02DCE239200458FFE /* Info.plist */,
+				C2B2B8F22DCE239200458FFE /* LaunchScreen.storyboard */,
+				C2B2B8F42DCE239200458FFE /* Main.storyboard */,
+				C2B2B8F52DCE239200458FFE /* SceneDelegate.swift */,
+				C2B2B8F62DCE239200458FFE /* ViewController.swift */,
+			);
+			path = HandwritingPencilKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +83,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C2B2B8D82DCE232A00458FFE /* HandwritingPencilKit */,
 			);
 			name = HandwritingPencilKit;
 			packageProductDependencies = (
@@ -122,6 +130,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B2B8F82DCE239200458FFE /* Assets.xcassets in Resources */,
+				C2B2B8FA2DCE239200458FFE /* LaunchScreen.storyboard in Resources */,
+				C2B2B8FB2DCE239200458FFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +143,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B2B8FC2DCE239200458FFE /* AppDelegate.swift in Sources */,
+				C2B2B8FD2DCE239200458FFE /* SceneDelegate.swift in Sources */,
+				C2B2B8FE2DCE239200458FFE /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C2B2B8F22DCE239200458FFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2B2B8F12DCE239200458FFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C2B2B8F42DCE239200458FFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2B2B8F32DCE239200458FFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C2B2B8EA2DCE232C00458FFE /* Debug */ = {
@@ -148,11 +181,13 @@
 				DEVELOPMENT_TEAM = C3M56A453W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HandwritingPencilKit/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,9 +195,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = online.swampios.HandwritingPencilKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -176,11 +215,13 @@
 				DEVELOPMENT_TEAM = C3M56A453W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HandwritingPencilKit/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,9 +229,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = online.swampios.HandwritingPencilKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
