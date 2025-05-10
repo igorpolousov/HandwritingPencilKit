@@ -16,5 +16,8 @@ class PracticeViewController: UIViewController, PKCanvasViewDelegate, CALayerDel
     @IBOutlet weak var practiceTextField: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
 }
