@@ -15,6 +15,9 @@
 		C2B2B9012DCE44AF00458FFE /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2B9002DCE44AF00458FFE /* PracticeViewController.swift */; };
 		C2B2B9082DCF77B900458FFE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2B9072DCF77B900458FFE /* SettingsViewController.swift */; };
 		C2B2B90B2DCFA32600458FFE /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2B90A2DCFA32600458FFE /* ScoreViewController.swift */; };
+		C2B2B90E2DCFBBA000458FFE /* TextGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2B90D2DCFBBA000458FFE /* TextGenerator.swift */; };
+		C2B2B9102DCFBBEE00458FFE /* PKStrokeMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2B90F2DCFBBEE00458FFE /* PKStrokeMatching.swift */; };
+		C2B2B9122DCFBC1700458FFE /* PKStrokePathAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2B9112DCFBC1700458FFE /* PKStrokePathAdditions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		C2B2B9002DCE44AF00458FFE /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 		C2B2B9072DCF77B900458FFE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C2B2B90A2DCFA32600458FFE /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		C2B2B90D2DCFBBA000458FFE /* TextGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGenerator.swift; sourceTree = "<group>"; };
+		C2B2B90F2DCFBBEE00458FFE /* PKStrokeMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKStrokeMatching.swift; sourceTree = "<group>"; };
+		C2B2B9112DCFBC1700458FFE /* PKStrokePathAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKStrokePathAdditions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		C2B2B8F72DCE239200458FFE /* HandwritingPencilKit */ = {
 			isa = PBXGroup;
 			children = (
+				C2B2B90C2DCFBB5C00458FFE /* Logic */,
 				C2B2B9092DCF948A00458FFE /* ViewControllers */,
 				C2B2B8F42DCE239200458FFE /* Main.storyboard */,
 				C2B2B8EF2DCE239200458FFE /* Assets.xcassets */,
@@ -81,6 +88,16 @@
 				C2B2B90A2DCFA32600458FFE /* ScoreViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C2B2B90C2DCFBB5C00458FFE /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C2B2B90D2DCFBBA000458FFE /* TextGenerator.swift */,
+				C2B2B90F2DCFBBEE00458FFE /* PKStrokeMatching.swift */,
+				C2B2B9112DCFBC1700458FFE /* PKStrokePathAdditions.swift */,
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,11 +174,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B2B90E2DCFBBA000458FFE /* TextGenerator.swift in Sources */,
+				C2B2B9122DCFBC1700458FFE /* PKStrokePathAdditions.swift in Sources */,
 				C2B2B9012DCE44AF00458FFE /* PracticeViewController.swift in Sources */,
 				C2B2B8FC2DCE239200458FFE /* AppDelegate.swift in Sources */,
 				C2B2B90B2DCFA32600458FFE /* ScoreViewController.swift in Sources */,
 				C2B2B8FD2DCE239200458FFE /* SceneDelegate.swift in Sources */,
 				C2B2B9082DCF77B900458FFE /* SettingsViewController.swift in Sources */,
+				C2B2B9102DCFBBEE00458FFE /* PKStrokeMatching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
