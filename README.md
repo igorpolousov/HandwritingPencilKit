@@ -64,3 +64,16 @@
     !9. Так же в этом фале вверху сделан extension для Collection. Назначение этого расширения на момент написания не понятно(10.05.25 15:35)
     10. Добавим constraints для созданных элементов
     11. Изначально для popover будет проставлен стандартный размер, для того чтобы его изменить, нужно выбарть view controller in storyboard -> attributes inspector -> группа View Controller -> content size -> поставить галочку: Use preffered explicit size -> указать нужный размер
+    
+## Section 5: Main.storyboard - Score View Controller - Отображение точночти сделанной обводки
+    
+    Данный View Controller отображает смайли к и процент точности выполнения задания. Отображается через segue с зарактеристиками present modally
+    1. Добавим файл ScoreViewController
+    2. Добавим view controller в story board
+    3. Сделаем segue: в storyboard в document outline выбираем PracticeViewController -> control + drag на экран Score View Controller и выбираем present modally
+    4. Добавляем еще один view на который добавим два label - один для отображения emoji а второй для отображения процента точности выполнения. 
+    5. Добавим размеры, constraints, IBOutlets, совйства и свяжем файл и controller в storyboard
+    
+    чтобы добавить emoji используем cmd + control + space
+    
+    6. Добавим массив с emoji

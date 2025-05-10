@@ -27,7 +27,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome to WWDC" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8A3-wm-f7n">
-                                <rect key="frame" x="20" y="44" width="1069.5" height="34"/>
+                                <rect key="frame" x="20" y="44" width="1064.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -67,7 +67,7 @@
                             <constraint firstItem="3fH-ag-lIr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xxx-rO-yZS"/>
                             <constraint firstItem="h4u-Yz-dpM" firstAttribute="leading" secondItem="Lh0-3B-Z7z" secondAttribute="trailing" id="YXf-Qj-UFN"/>
                             <constraint firstItem="8A3-wm-f7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="akQ-xY-ZCd"/>
-                            <constraint firstItem="Lh0-3B-Z7z" firstAttribute="leading" secondItem="8A3-wm-f7n" secondAttribute="trailing" id="huk-ZX-FGA"/>
+                            <constraint firstItem="Lh0-3B-Z7z" firstAttribute="leading" secondItem="8A3-wm-f7n" secondAttribute="trailing" constant="5" id="huk-ZX-FGA"/>
                             <constraint firstAttribute="bottom" secondItem="3fH-ag-lIr" secondAttribute="bottom" id="o1x-nd-VIU"/>
                             <constraint firstItem="8A3-wm-f7n" firstAttribute="centerY" secondItem="h4u-Yz-dpM" secondAttribute="centerY" id="tZv-6Y-vWr"/>
                         </constraints>
@@ -77,6 +77,7 @@
                         <outlet property="canvasView" destination="7No-QD-f6D" id="AJd-FG-Kec"/>
                         <outlet property="practiceTextField" destination="8A3-wm-f7n" id="QVz-kV-gh6"/>
                         <outlet property="scoreLabel" destination="Lh0-3B-Z7z" id="dnw-Q0-ZrU"/>
+                        <segue destination="EvV-97-Tsm" kind="presentation" identifier="showScore" id="e67-hX-l2d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -173,6 +174,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEr-c7-IUT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="817" y="-384"/>
+        </scene>
+        <!--Score View Controller-->
+        <scene sceneID="hSw-59-l8W">
+            <objects>
+                <viewController id="EvV-97-Tsm" customClass="ScoreViewController" customModule="HandwritingPencilKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Dq-l4-am2">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="744"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nse-bB-VUz">
+                                <rect key="frame" x="169" y="113.5" width="366" height="517"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6f-QC-H3C">
+                                        <rect key="frame" x="20" y="20" width="326" height="359"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="300"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAN-ni-lpw">
+                                        <rect key="frame" x="59.5" y="387" width="247" height="120"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="l6f-QC-H3C" firstAttribute="leading" secondItem="Nse-bB-VUz" secondAttribute="leading" constant="20" symbolic="YES" id="5WT-Zs-wi5"/>
+                                    <constraint firstAttribute="bottom" secondItem="RAN-ni-lpw" secondAttribute="bottom" constant="10" id="NkW-HK-M18"/>
+                                    <constraint firstItem="l6f-QC-H3C" firstAttribute="top" secondItem="Nse-bB-VUz" secondAttribute="top" constant="20" symbolic="YES" id="O90-KK-fMA"/>
+                                    <constraint firstItem="RAN-ni-lpw" firstAttribute="centerX" secondItem="Nse-bB-VUz" secondAttribute="centerX" id="lem-Qq-Cdf"/>
+                                    <constraint firstAttribute="trailing" secondItem="l6f-QC-H3C" secondAttribute="trailing" constant="20" symbolic="YES" id="oeb-GH-76g"/>
+                                    <constraint firstItem="RAN-ni-lpw" firstAttribute="top" secondItem="l6f-QC-H3C" secondAttribute="bottom" constant="8" symbolic="YES" id="tiJ-H6-cu4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DFY-tz-Y6Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nse-bB-VUz" firstAttribute="centerX" secondItem="2Dq-l4-am2" secondAttribute="centerX" id="3cu-7w-Fl9"/>
+                            <constraint firstItem="Nse-bB-VUz" firstAttribute="centerY" secondItem="2Dq-l4-am2" secondAttribute="centerY" id="saE-HS-MQf"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="704" height="744"/>
+                    <connections>
+                        <outlet property="scoreEmojiView" destination="l6f-QC-H3C" id="b5A-R6-WI8"/>
+                        <outlet property="scoreTextField" destination="RAN-ni-lpw" id="P2Z-Wx-2ZS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pfp-F3-nRm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="393"/>
         </scene>
     </scenes>
     <resources>
