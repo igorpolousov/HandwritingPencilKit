@@ -60,8 +60,7 @@
 		C2B2B8F72DCE239200458FFE /* HandwritingPencilKit */ = {
 			isa = PBXGroup;
 			children = (
-				C2B2B9002DCE44AF00458FFE /* PracticeViewController.swift */,
-				C2B2B9072DCF77B900458FFE /* SettingsViewController.swift */,
+				C2B2B9092DCF948A00458FFE /* ViewControllers */,
 				C2B2B8F42DCE239200458FFE /* Main.storyboard */,
 				C2B2B8EF2DCE239200458FFE /* Assets.xcassets */,
 				C2B2B8F02DCE239200458FFE /* Info.plist */,
@@ -70,6 +69,15 @@
 				C2B2B8F52DCE239200458FFE /* SceneDelegate.swift */,
 			);
 			path = HandwritingPencilKit;
+			sourceTree = "<group>";
+		};
+		C2B2B9092DCF948A00458FFE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2B2B9002DCE44AF00458FFE /* PracticeViewController.swift */,
+				C2B2B9072DCF77B900458FFE /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
