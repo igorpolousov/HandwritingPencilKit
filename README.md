@@ -63,3 +63,4 @@
     8. Зададим значения для segmented control
     !9. Так же в этом фале вверху сделан extension для Collection. Назначение этого расширения на момент написания не понятно(10.05.25 15:35)
     10. Добавим constraints для созданных элементов
+    11. Изначально для popover будет проставлен стандартный размер, для того чтобы его изменить, нужно выбарть view controller in storyboard -> attributes inspector -> группа View Controller -> content size -> поставить галочку: Use preffered explicit size -> указать нужный размер
